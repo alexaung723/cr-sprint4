@@ -1,0 +1,243 @@
+@import "./variables";
+
+@mixin card {
+  color: $color-white;
+  font-family: "Slalom Sans";
+  background: $color-white;
+  border: 4px solid;
+
+  p {
+    @include fontStandard();
+  }
+}
+
+@mixin cardSecondary {
+  @include card();
+  border: 2px solid $color-black;
+}
+
+@mixin fontBase {
+  color: $color-black;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 20px;
+  font-family: "Slalom Sans";
+}
+
+@mixin fontStandard {
+  @include fontBase();
+}
+
+@mixin fontStandardBold {
+  @include fontStandard();
+  font-weight: 900;
+}
+
+@mixin fontSecondary {
+  @include fontBase();
+}
+
+@mixin cardTitle {
+  @include fontSecondary();
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+
+  @media screen and (max-width: 1182px) {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@mixin fontHeader {
+  @include fontStandard();
+  font-family: "Slalom Sans";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 76.8px;
+}
+
+@mixin sectionHeader {
+  @include fontHeader();
+  margin: 32px 0px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  color: $color-slalom-primary;
+  text-transform: uppercase;
+}
+
+@mixin button {
+  @include fontStandard();
+  padding: 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+    color: $color-white;
+  }
+
+  &:disabled {
+    background-image: none;
+    background-color: $color-gray;
+    border: none;
+    color: $color-white;
+    cursor: not-allowed;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin buttonPrimary {
+  @include button();
+  color: $color-white;
+  background-color: $color-slalom-primary;
+  font-weight: bold;
+
+  &:active {
+    box-shadow: none;
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &:focus {
+    color: $color-white;
+  }
+
+  &:disabled {
+    box-shadow: none;
+  }
+}
+
+@mixin buttonSecondary {
+  background: none;
+  color: $color-slalom-primary;
+  font-weight: bold;
+  gap: 10px;
+
+  span {
+    border-bottom: 1px solid transparent;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $color-slalom-primary-dark;
+  }
+
+  &:active {
+    span {
+      border-bottom: 1px solid $color-slalom-primary;
+    }
+
+    color: $color-black;
+    text-decoration: solid;
+    font-weight: bolder;
+  }
+
+  &:disabled {
+    color: $color-gray;
+    background-color: $color-white;
+  }
+}
+
+@mixin header-common {
+  font-family: Slalom Sans;
+  line-height: auto;
+  letter-spacing: 0%;
+  text-decoration: none;
+  text-transform: original;
+  margin: 0px;
+}
+
+@mixin global-h1 {
+  @include header-common;
+  font-size: 48px;
+  font-weight: normal;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    font-size: 34px;
+  }
+}
+
+@mixin global-h2 {
+  @include header-common;
+  font-size: 24px;
+  font-weight: bold;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    font-size: 20px;
+  }
+}
+
+@mixin body-common {
+  font-family: Slalom Sans;
+  line-height: 150%;
+  text-transform: original;
+  margin: 0px;
+}
+
+@mixin body-large-bold {
+  @include body-common;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 2%;
+}
+
+@mixin body-large-regular {
+  @include body-common;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0%;
+}
+
+@mixin body-large-underline {
+  @include body-common;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: underline;
+  letter-spacing: 0%;
+}
+
+@mixin body-small-bold {
+  @include body-common;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: 2%;
+}
+
+@mixin body-small-regular {
+  @include body-common;
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: 0%;
+}
+
+@mixin button-label {
+  @include body-common;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+}

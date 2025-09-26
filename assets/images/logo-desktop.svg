@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="153mm"
+   height="55mm"
+   viewBox="0 0 152.99998 54.999999"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlnsSvg="http://www.w3.org/2000/svg">
+   <defs
+      id="defs2" />
+   <g
+      id="layer1"
+      style="display:inline">
+      <rect
+         style="fill:#b3b3b3;fill-opacity:1;stroke-width:0.263285"
+         id="rect234"
+         width="152.92917"
+         height="55.033333"
+         x="-0.13229179"
+         y="-0.19843674" />
+      <text
+         xmlSpace="preserve"
+         style="font-weight:bold;font-size:16.9333px;line-height:1.25;font-family:Rubik;-inkscape-font-specification:'Rubik, Bold';font-variant-ligatures:none;stroke-width:0.264583;image-rendering:auto"
+         x="9.5712414"
+         y="31.589392"
+         id="text342">
+         <tspan
+            id="tspan340"
+            style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:16.9333px;font-family:'Slalom Sans';-inkscape-font-specification:'Slalom Sans Heavy';stroke-width:0.264583"
+            x="9.5712414"
+            y="31.589392">Event Logo Here</tspan>
+      </text>
+      <text
+         xmlSpace="preserve"
+         style="font-weight:bold;font-size:6.35px;line-height:1.25;font-family:Rubik;-inkscape-font-specification:'Rubik, Bold';font-variant-ligatures:none;stroke-width:0.264583"
+         x="62.974522"
+         y="44.648438"
+         id="text9374">
+         <tspan
+            id="tspan9372"
+            style="stroke-width:0.264583"
+            x="62.974522"
+            y="44.648438">Desktop</tspan>
+      </text>
+   </g>
+</svg>

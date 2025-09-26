@@ -1,0 +1,33 @@
+$color-slalom-primary: #0c62fb;
+$color-slalom-primary-dark: darken(#0c62fb, 10%);
+$color-bg-light: #ebebeb;
+$color-bg-border: #9c9c9c;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-gray: #d1d1d1;
+$color-light-gray: lighten($color-gray, 20%);
+$color-dark-gray: darken($color-gray, 20%);
+
+$color-text-shadow: $color-gray;
+
+$color-success: #73f287;
+$color-error: #fd7886;
+
+// breakpoints
+$breakpoint-sm: 375px; // breakpoint for mobile
+$breakpoint-md: 768px; // breakpoint for tablet
+$breakpoint-lg: 1440px;
+$breakpoint-xl: 1920px;
+
+$color-primary: #006956;
+$color-text-secondary: #005c40;
+$color-border-secondary: #70c5b5;
+$color-card-secondary: #d7fff8;
+$color-input-error-bg: #ffa6af;
+$color-input-error-border: #e95a5a;
+$color-input-error-text: #7e0b17;
+$color-input-success-bg: #d3facc;
+$color-input-success-border: #5cd448;
+$color-input-success-text: #135b09;
